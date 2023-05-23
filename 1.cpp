@@ -6,16 +6,10 @@ long long cnt , sum , cur;
 int main()
 {
 	cin >> x;
-	for(int i = 0; i < x.size(); i++)
+	x = " " + x;
+	for(int i = 1; i <= x.size(); i++)
 	{
-		if(x[i] == '(')
-		{
-			while(x[cur] == ')')
-			{
-				cur++;
-				cnt++;
-			}
-		}
+		if(x[i] == '(') 
 		sum += (cnt + 1) * (cnt + 1);
 		cnt = 0;
 		cur = 0;
